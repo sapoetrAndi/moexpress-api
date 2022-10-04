@@ -11,8 +11,6 @@ exports.findAll = (req, res) => {
       message: err.message || "Some error while retrieving posts."
     })
   });
-
-
 }
 
 exports.create = (req, res) => {
