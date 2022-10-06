@@ -2,6 +2,7 @@ module.exports = (app) => {
   const auth = require('../controllers/auth.controller')
   const router = require('express').Router()
 
+  router.get('/registration', auth.registration)
   router.get('/login', auth.login)
   router.get('/logout', auth.logout)
 
